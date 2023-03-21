@@ -1,0 +1,158 @@
+body
+{
+    background-color: #cce6ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    box-shadow: 2px 2px 2px black;
+}
+
+h1
+{
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #66c2ff
+    
+}
+
+h2
+{
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid rgb(49, 121, 181);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 10px;
+    line-height: 1em;
+}
+
+ul
+{
+    font-size: 20px;
+    list-style-type: none;
+    text-align:center;
+    line-height: 2em;
+    justify-content: center;
+    
+}
+
+
+.container 
+{
+    display: flex;
+    justify-content:space-around;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 3em;
+    font-size: 20px;
+    
+}
+
+
+.colonne1
+{
+    width: 45%;
+    line-height: 1.5em;
+}
+
+
+.colonne2
+{
+    width: 45%;
+    line-height: 1.5em;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: aliceblue;
+    color: #66c2ff;
+}
+a:link{
+    color: azure;
+
+
+}
+
+
+a:visited {
+    color:white;
+}
+
+.profils {
+    display:inline-flex;
+    justify-content: center;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #66c2ff;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.profils:hover {
+    background-color:#cce6ff
+}
+
+.profils:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+
+@media screen and (max-width: 960px){
+    .container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        line-height: 1.5em;
+
+        
+    }
+
+    .colonne1,
+    .colonne2 {
+        width: 80%;
+    }
+
+
+    .profils {
+        flex-direction:column;
+        display:block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    
+    h2 {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px 5px;
+    }
+
+}
